@@ -1,0 +1,227 @@
+
+.box {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.container1 {
+    background-color: rgb(29, 28, 28);
+    height: 600px;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    flex-direction: row;
+}
+
+.imgd {
+    width: 300px;
+    height: 600px;
+}
+
+.one {
+    align-self: center;
+    margin: 20px;
+}
+
+.one> h1 {
+    color: white;
+}
+
+h1 {
+    font-family: 'Arvo', serif;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.img1 {
+    height: 600px; 
+}
+
+.container2 {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.container2:hover .two {
+    transform: scale(.8);
+}
+
+.container2 .two {
+    transition: 1s;
+    overflow: hidden;
+}
+
+.container2:hover .three {
+    transform: scale(.8);
+}
+
+.container2 .three {
+    transition: 1s;
+    overflow: hidden;
+}
+
+.container2:hover .four {
+    transform: scale(.8);
+}
+
+.container2 .four {
+    transition: 1s;
+    overflow: hidden;
+}
+
+.container2:hover .five {
+    transform: scale(.8);
+}
+
+.container2 .five {
+    transition: 1s;
+    overflow: hidden;
+}
+
+.two {
+    background-color: red;
+    border: 10px solid red;
+    color: white;
+}
+
+.four {
+    background-color: rgb(19, 18, 18);
+    border: 10px solid rgb(19, 18, 18);
+    color: white;
+    grid-area: 1/ 2 / 1 / 5;
+}
+
+.five {
+    background-color: grey;
+    border: 10px solid grey;
+    color: white;
+}
+
+.container3 {
+    background-color: gold;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.six {
+    display: grid;
+    margin: 130px;
+    grid-template-columns: 400px 400px 400px;
+    grid-template-rows: 400px 400px 400px;
+    gap: 20px;
+}
+
+.six> img {
+    height: 400px;
+    width: 400px;
+}
+
+.box img {
+    transition: 1.5s;
+}
+
+.box:hover img {
+    transform: scale(1.05);
+}
+
+
+
+@media (min-width:820px) and (max-width:1300px)
+{
+    .one> h1 {
+        font-size: 2.5rem;
+    }
+
+    .img1 {
+        height: 600px;
+}
+
+    .six {
+    display: grid;
+    margin: 80px;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 200px 200px 200px;
+    gap: 20px;
+}
+
+   .six> img {
+    height: 200px;
+    width: 200px;
+}
+
+   .eight { 
+    height: 200px;
+    width: 200px;
+}
+
+   .eight> h1 {
+    font-size: 1.5rem;
+}
+
+   .eight> p {
+    font-size: 10px;
+}
+}
+
+@media (min-width: 390px) and (max-width: 819px)
+{
+    .container1 {
+        height: 200px;
+    }
+
+    .one> h1 {
+        font-size: 1rem;
+    }
+    .img1 {
+        height: 200px;
+}
+
+    .container3 {
+        height: 370px;
+    }
+
+    .container2 {
+        height: 200px;
+    }
+
+    .container2> div> h1 {
+        font-size: 1rem;
+    }
+
+    .container2> div> p {
+        font-size: 5px;
+    }
+
+    .six {
+    display: grid;
+    margin: 25px;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+    gap: 10px;
+}
+
+.six> img {
+    height: 100px;
+    width: 100px;
+}
+
+
+.eight { 
+    height: 100px;
+    width: 100px;
+}
+
+.eight> h1 {
+    font-size: 1rem;
+}
+
+.eight> p {
+    font-size: 4px;
+}
+
+}
+
+
+
